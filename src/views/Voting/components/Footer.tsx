@@ -1,10 +1,9 @@
 import React from 'react'
-import { Box, Button, Text, Heading, ProposalIcon, Flex } from '@pancakeswap/uikit'
+import { Box, Button, Text, Heading, ProposalIcon, Flex } from 'uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 import Link from 'next/link'
 import Container from 'components/Layout/Container'
-import DesktopImage from './DesktopImage'
 
 const StyledFooter = styled(Box)`
   background: ${({ theme }) => theme.colors.gradients.bubblegum};
@@ -36,7 +35,6 @@ const Footer = () => {
               <Button startIcon={<ProposalIcon color="currentColor" width="24px" />}>{t('Make a Proposal')}</Button>
             </Link>
           </Box>
-          <DesktopImage src="/images/voting/voting-bunny.png" width={173} height={234} />
         </Flex>
       </Container>
     </StyledFooter>

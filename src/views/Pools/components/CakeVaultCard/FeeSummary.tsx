@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Flex, useTooltip, TooltipText } from '@pancakeswap/uikit'
+import { Text, Flex, useTooltip, TooltipText } from 'uikit'
 import { useTranslation } from 'contexts/Localization'
 import { VaultKey } from 'state/types'
 import { useVaultPoolByKey } from 'state/pools/hooks'
@@ -29,7 +29,7 @@ const FeeSummary: React.FC<FeeSummaryProps> = ({ stakingTokenSymbol, stakeAmount
       </Text>
       <Text>
         {t(
-          'Only applies within %num% days of staking. Unstaking after %num% days will not include a fee. Timer resets every time you stake new CAKE in the pool.',
+          'Only applies within %num% days of staking. Unstaking after %num% days will not include a fee. Timer resets every time you stake new BGSP in the pool.',
           {
             num: withdrawalDayPeriod,
           },

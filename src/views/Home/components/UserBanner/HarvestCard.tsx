@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
-import { AutoRenewIcon, Button, Card, CardBody, Flex, Skeleton, Text, ArrowForwardIcon } from '@pancakeswap/uikit'
+import { AutoRenewIcon, Button, Card, CardBody, Flex, Skeleton, Text, ArrowForwardIcon } from 'uikit'
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import BigNumber from 'bignumber.js'
 import { useTranslation } from 'contexts/Localization'
@@ -49,7 +49,7 @@ const HarvestCard = () => {
           toastSuccess(
             `${t('Harvested')}!`,
             <ToastDescriptionWithTx txHash={receipt.transactionHash}>
-              {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'CAKE' })}
+              {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'BGSP' })}
             </ToastDescriptionWithTx>,
           )
         } else {

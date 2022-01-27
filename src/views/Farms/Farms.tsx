@@ -1,8 +1,8 @@
 import React, { useEffect, useCallback, useState, useMemo, useRef } from 'react'
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
-import { Image, Heading, RowType, Toggle, Text, Button, ArrowForwardIcon, Flex } from '@pancakeswap/uikit'
-import { ChainId } from '@pancakeswap/sdk'
+import { Image, Heading, RowType, Toggle, Text, Button, ArrowForwardIcon, Flex } from 'uikit'
+import { ChainId } from '@bigswap/sdk'
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import styled from 'styled-components'
 import FlexLayout from 'components/Layout/Flex'
@@ -255,7 +255,7 @@ const Farms: React.FC = ({ children }) => {
     const { token, quoteToken } = farm
     const tokenAddress = token.address
     const quoteTokenAddress = quoteToken.address
-    const lpLabel = farm.lpSymbol && farm.lpSymbol.split(' ')[0].toUpperCase().replace('PANCAKE', '')
+    const lpLabel = farm.lpSymbol && farm.lpSymbol.split(' ')[0].toUpperCase().replace('BIGSWAP', '')
 
     const row: RowProps = {
       apr: {

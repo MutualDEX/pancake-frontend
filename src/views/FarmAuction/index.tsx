@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button, Heading, Text, Flex, Link, Breadcrumbs } from '@pancakeswap/uikit'
+import { Button, Heading, Text, Flex, Link, Breadcrumbs } from 'uikit'
 import { useWeb3React } from '@web3-react/core'
 import { useTranslation } from 'contexts/Localization'
 import PageHeader from 'components/PageHeader'
@@ -96,8 +96,11 @@ const FarmAuction = () => {
             <Heading as="h1" scale="xxl" my="24px">
               {t('Community Farm Auction')}
             </Heading>
+             <Heading as="h1" scale="xl" my="24px">
+              {t('COMING SOON')}
+            </Heading>
             <Text color="textSubtle" mb="24px">
-              {t('Each week, qualifying projects can bid CAKE for the right to host a 7-day Farm on PancakeSwap.')}
+              {t('Each week, qualifying projects can bid BGSP for the right to host a 7-day Farm on BigSwap.')}
             </Text>
             <Text color="textSubtle">{t('This page is for projects to bid for farms.')}</Text>
             <Text color="textSubtle" mb="24px">
@@ -108,13 +111,13 @@ const FarmAuction = () => {
             <Link external href={FORM_ADDRESS}>
               <Button>
                 <Text color="white" bold fontSize="16px" mr="4px">
-                  {t('Apply for a Farm/Pool')}
+                  {t('Apply for a Big Farm/Pool')}
                 </Text>
               </Button>
             </Link>
           </Left>
           <Right>
-            <img src="/images/decorations/auction-bunny.png" alt={t('auction bunny')} />
+            <img src="" alt="" />
           </Right>
         </Flex>
       </StyledHeader>
@@ -145,18 +148,8 @@ const FarmAuction = () => {
           </AuctionContainer>
         </PageSection>
         <PageSection
-          background={theme.isDark ? CAKE_BURN_BG_DARK : CAKE_BURN_BG_LIGHT}
-          index={2}
-          innerProps={{ style: { width: '100%' } }}
-          dividerPosition="top"
-          dividerFill={{ light: CAKE_BURN_TOP_FILL_LIGHT, dark: CAKE_BURN_TOP_FILL_DARK }}
-        >
-          <AuctionCakeBurn />
-        </PageSection>
-        <PageSection
           background={theme.isDark ? FAQ_BG_DARK : FAQS_BG_LIGHT}
-          clipFill={{ light: '#CBD7EF', dark: '#434575' }}
-          dividerFill={{ light: CAKE_BURN_BG_LIGHT, dark: CAKE_BURN_BG_DARK }}
+          clipFill={{ light: '#0000b8', dark: '#0000b8' }}
           concaveDivider
           index={3}
           dividerPosition="top"

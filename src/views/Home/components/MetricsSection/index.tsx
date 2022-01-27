@@ -1,13 +1,17 @@
 import React from 'react'
-import { Heading, Flex, Text, Skeleton, ChartIcon, CommunityIcon, SwapIcon } from '@pancakeswap/uikit'
+import { Heading, Flex, Text, Skeleton, ChartIcon, CommunityIcon, SwapIcon } from 'uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useGetStats } from 'hooks/api'
 import useTheme from 'hooks/useTheme'
 import { formatLocalisedCompactNumber } from 'utils/formatBalance'
-import useSWRImmutable from 'swr/immutable'
 import IconCard, { IconCardData } from '../IconCard'
 import StatCardContent from './StatCardContent'
 import GradientLogo from '../GradientLogoSvg'
+
+
+// Values fetched from bitQuery effective 6/9/21
+const txCount = 30841921
+const addressCount = 2751624
 
 const Stats = () => {
   const { t } = useTranslation()
@@ -15,70 +19,65 @@ const Stats = () => {
   const { theme } = useTheme()
 
   const tvlString = data ? formatLocalisedCompactNumber(data.tvl) : '-'
-  const { data: txCount } = useSWRImmutable('totalTx30Days')
-  const { data: addressCount } = useSWRImmutable('addressCount30Days')
   const trades = formatLocalisedCompactNumber(txCount)
   const users = formatLocalisedCompactNumber(addressCount)
 
-  const tvlText = t('And those users are now entrusting the platform with over $%tvl% in funds.', { tvl: tvlString })
-  const [entrusting, inFunds] = tvlText.split(tvlString)
+  const tvlText = t('The Biggest Community Driven Platform.')
+
 
   const UsersCardData: IconCardData = {
-    icon: <CommunityIcon color="secondary" width="36px" />,
+    icon: <CommunityIcon color="blue" width="36px" />,
   }
 
   const TradesCardData: IconCardData = {
-    icon: <SwapIcon color="primary" width="36px" />,
+    icon: <SwapIcon color="blue" width="36px" />,
   }
 
   const StakedCardData: IconCardData = {
-    icon: <ChartIcon color="failure" width="36px" />,
+    icon: <ChartIcon color="blue" width="36px" />,
   }
 
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
-      <GradientLogo height="48px" width="48px" mb="24px" />
-      <Heading textAlign="center" scale="xl">
-        {t('Used by millions.')}
+      <Heading textAlign="center"color="blue" scale="xl">
+        {t('Welcome to a new growing Community of DeFi Apps. Developers, traders, and liquidity providers')}
       </Heading>
-      <Heading textAlign="center" scale="xl" mb="32px">
-        {t('Trusted with billions.')}
+      <Heading textAlign="center" color="blue" scale="xl" mb="32px">
+        {t('participating together to build a financial marketplace that is 100% Decentralized and Community-driven.')}
       </Heading>
-      <Text textAlign="center" color="textSubtle">
-        {t('PancakeSwap has the most users of any decentralized platform, ever.')}
+      <Text textAlign="center" color="blue">
+        {t('Make Sure You Join The #BigSwapArmy ')}
       </Text>
       <Flex flexWrap="wrap">
-        <Text display="inline" textAlign="center" color="textSubtle" mb="20px">
-          {entrusting}
-          <>{data ? <>{tvlString}</> : <Skeleton display="inline-block" height={16} width={70} mt="2px" />}</>
-          {inFunds}
+        <Text display="inline" textAlign="center" color="blue" mb="20px">
+          {t('')}
         </Text>
       </Flex>
 
-      <Text textAlign="center" color="textSubtle" bold mb="32px">
-        {t('Will you join them?')}
+      <Text textAlign="center" color="blue" bold mb="32px">
+        {t('')}
       </Text>
 
       <Flex flexDirection={['column', null, null, 'row']}>
         <IconCard {...UsersCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
           <StatCardContent
-            headingText={t('%users% users', { users })}
-            bodyText={t('in the last 30 days')}
+            headingText={t('Community')}
+            bodyText={t('Strong & Growing')}
             highlightColor={theme.colors.secondary}
           />
         </IconCard>
         <IconCard {...TradesCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
           <StatCardContent
-            headingText={t('%trades% trades', { trades })}
-            bodyText={t('made in the last 30 days')}
+            headingText={t('Governance')}
+            bodyText={t('Let Your Voice Be Heard')}
             highlightColor={theme.colors.primary}
           />
         </IconCard>
         <IconCard {...StakedCardData}>
           <StatCardContent
-            headingText={t('$%tvl% staked', { tvl: tvlString })}
-            bodyText={t('Total Value Locked')}
-            highlightColor={theme.colors.failure}
+            headingText={t('Utility')}
+            bodyText={t('Crypto With Utility')}
+            highlightColor={theme.colors.success}
           />
         </IconCard>
       </Flex>

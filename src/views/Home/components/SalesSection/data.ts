@@ -10,23 +10,22 @@ export const swapSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/',
+    to: 'https://docs.bigswap.exchange/',
     text: 'Learn',
     external: true,
   },
   images: {
     path: '/images/home/trade/',
     attributes: [
-      { src: 'BNB', alt: 'BNB token' },
-      { src: 'BTC', alt: 'BTC token' },
-      { src: 'CAKE', alt: 'CAKE token' },
+      { src: '', alt: '' },
+      { src: '', alt: '' }, 
     ],
   },
 }
 
 export const earnSectionData: SalesSectionProps = {
   headingText: 'Earn passive income with crypto.',
-  bodyText: 'PancakeSwap makes it easy to make your crypto work for you.',
+  bodyText: 'BigSwap makes your crypto work for you.',
   reverse: true,
   primaryButton: {
     to: '/farms',
@@ -34,32 +33,30 @@ export const earnSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/products/yield-farming',
+    to: 'https://docs.bigswap.exchange/products/yield-farming',
     text: 'Learn',
     external: true,
   },
   images: {
     path: '/images/home/earn/',
     attributes: [
-      { src: 'pie', alt: 'Pie chart' },
-      { src: 'stonks', alt: 'Stocks chart' },
-      { src: 'folder', alt: 'Folder with cake token' },
+      { src: '', alt: '' },
     ],
   },
 }
 
 export const cakeSectionData: SalesSectionProps = {
-  headingText: 'CAKE makes our world go round.',
+  headingText: 'BGSP makes our world go round.',
   bodyText:
-    'CAKE token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'BGSP token is the heart of the BigSwap ecosystem. Buy it, Farm it, Spend it, Stake it, you can even Vote with it!',
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
-    text: 'Buy CAKE',
+    to: '/swap?outputCurrency=0xe9f861b22cd5240494ecc14afea02659ec59864f',
+    text: 'Buy BGSP',
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/tokenomics/cake',
+    to: 'https://docs.bigswap.exchange/tokenomics/BGSP',
     text: 'Learn',
     external: true,
   },
@@ -67,10 +64,7 @@ export const cakeSectionData: SalesSectionProps = {
   images: {
     path: '/images/home/cake/',
     attributes: [
-      { src: 'bottom-right', alt: 'Small 3d pancake' },
-      { src: 'top-right', alt: 'Small 3d pancake' },
-      { src: 'coin', alt: 'CAKE token' },
-      { src: 'top-left', alt: 'Small 3d pancake' },
+      { src: '', alt: '' }, 
     ],
   },
 }

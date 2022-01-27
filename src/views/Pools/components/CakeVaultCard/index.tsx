@@ -11,7 +11,7 @@ import {
   LinkExternal,
   Link,
   TokenPairImage,
-} from '@pancakeswap/uikit'
+} from 'uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useWeb3React } from '@web3-react/core'
 import ConnectWalletButton from 'components/ConnectWalletButton'
@@ -51,7 +51,7 @@ export const CreditCalcBlock = () => {
             'The latest credit calculation period has ended. After the coming IFO, credits will be reset and the calculation will resume.',
           )}
         </Text>
-        <LinkExternal href="https://twitter.com/pancakeswap">
+        <LinkExternal href="https://twitter.com/bigswapfinance">
           {t('Follow us on Twitter to catch the latest news about the coming IFO.')}
         </LinkExternal>
       </>
@@ -59,10 +59,10 @@ export const CreditCalcBlock = () => {
       <>
         <Text>
           {t(
-            'The start block of the current calculation period. Your average IFO CAKE Pool staking balance is calculated throughout this period.',
+            'The start block of the current calculation period. Your average IFO BGSP Pool staking balance is calculated throughout this period.',
           )}
         </Text>
-        <LinkExternal href="https://medium.com/pancakeswap/initial-farm-offering-ifo-3-0-ifo-staking-pool-622d8bd356f1">
+        <LinkExternal href="https://medium.com/bigswap-finance/">
           {t('Check out our Medium article for more details.')}
         </LinkExternal>
       </>

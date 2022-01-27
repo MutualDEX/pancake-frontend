@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Text, Heading, Card, CardHeader, CardBody, Flex } from '@pancakeswap/uikit'
+import { Text, Heading, Card, CardHeader, CardBody, Flex } from 'uikit'
 import { useTranslation } from 'contexts/Localization'
 import useApproveConfirmTransaction from 'hooks/useApproveConfirmTransaction'
 import { useCake, useFarmAuctionContract } from 'hooks/useContract'
@@ -76,11 +76,11 @@ const ReclaimBidCard: React.FC = () => {
           {t('Your bid in Auction #%auctionId% was unsuccessful.', { auctionId: reclaimableAuction.id })}
         </Text>
         <Text bold mb="16px">
-          {t('Reclaim your CAKE now.')}
+          {t('Reclaim your BGSP now.')}
         </Text>
         <Flex justifyContent="space-between" mb="8px">
           <Text color="textSubtle">{t('Your total bid')}</Text>
-          <Text>{t('%num% CAKE', { num: getBalanceNumber(amount).toLocaleString() })}</Text>
+          <Text>{t('%num% BGSP', { num: getBalanceNumber(amount).toLocaleString() })}</Text>
         </Flex>
         <Flex justifyContent="space-between" mb="24px">
           <Text color="textSubtle">{t('Your position')}</Text>

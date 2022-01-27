@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ButtonMenu, ButtonMenuItem, LinkExternal, Flex, Svg, Image, Button } from '@pancakeswap/uikit'
+import { ButtonMenu, ButtonMenuItem, LinkExternal, Flex, Svg, Image, Button } from 'uikit'
 import { useTranslation } from 'contexts/Localization'
 
 const Wrapper = styled.div<{ $isSide: boolean }>`
@@ -44,9 +44,9 @@ const Footer: React.FC<{ variant?: FooterVariant }> = ({ variant = 'default' }) 
     <Wrapper $isSide={isSide}>
       <Flex flexDirection={isSide ? 'column' : ['column', 'column', 'row']} alignItems="center">
         <ButtonMenu variant="subtle" scale="sm" activeIndex={0}>
-          <ButtonMenuItem>V2</ButtonMenuItem>
-          <ButtonMenuItem as="a" href="https://v1exchange.pancakeswap.finance/#/">
-            {t('V1 (old)')}
+          <ButtonMenuItem>V1</ButtonMenuItem>
+          <ButtonMenuItem as="a" href="https://bigswap.xyz/">
+            {t('BigSwap Wallet')}
           </ButtonMenuItem>
         </ButtonMenu>
         <LinkExternal
@@ -71,7 +71,7 @@ const Footer: React.FC<{ variant?: FooterVariant }> = ({ variant = 'default' }) 
             id="clickExchangeHelp"
             as="a"
             external
-            href="https://docs.pancakeswap.finance/products/pancakeswap-exchange"
+            href="https://docs.bigswap.exchange/products/bigswap-exchange"
             variant="subtle"
           >
             {t('Need help ?')}
@@ -80,7 +80,6 @@ const Footer: React.FC<{ variant?: FooterVariant }> = ({ variant = 'default' }) 
             <path d="M0 16V0C0 0 3 1 6 1C9 1 16 -2 16 3.5C16 10.5 7.5 16 0 16Z" />
           </Svg>
         </BubbleWrapper>
-        <Image src="/images/help.png" alt="Get some help" width={160} height={108} />
       </Flex>
     </Wrapper>
   )

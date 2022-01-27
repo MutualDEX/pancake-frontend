@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import BigNumber from 'bignumber.js'
 import { MaxUint256 } from '@ethersproject/constants'
-import { Modal, Text, Flex, BalanceInput, Box, Button, LogoRoundIcon } from '@pancakeswap/uikit'
+import { Modal, Text, Flex, BalanceInput, Box, Button, LogoRoundIcon } from 'uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useWeb3React } from '@web3-react/core'
 import { formatNumber, getBalanceAmount, getBalanceNumber } from 'utils/formatBalance'
@@ -90,7 +90,7 @@ const PlaceBidModal: React.FC<PlaceBidModalProps> = ({
 
   useEffect(() => {
     if (userNotEnoughCake) {
-      setErrorText(t('Insufficient CAKE balance'))
+      setErrorText(t('Insufficient BGSP balance'))
     } else if (!isMoreThanInitialBidAmount && isFirstBid) {
       setErrorText(t('First bid must be %initialBidAmount% CAKE or more.', { initialBidAmount }))
     } else if (!isMultipleOfTen) {
@@ -145,7 +145,7 @@ const PlaceBidModal: React.FC<PlaceBidModalProps> = ({
       <ExistingInfo>
         <Flex justifyContent="space-between">
           <Text>{t('Your existing bid')}</Text>
-          <Text>{t('%num% CAKE', { num: getBalanceNumber(amount).toLocaleString() })}</Text>
+          <Text>{t('%num% BGSP', { num: getBalanceNumber(amount).toLocaleString() })}</Text>
         </Flex>
         <Flex justifyContent="space-between">
           <Text>{t('Your position')}</Text>
@@ -157,12 +157,12 @@ const PlaceBidModal: React.FC<PlaceBidModalProps> = ({
           <Text>{t('Bid a multiple of 10')}</Text>
           <Flex>
             <LogoRoundIcon width="24px" height="24px" mr="4px" />
-            <Text bold>CAKE</Text>
+            <Text bold>BGSP</Text>
           </Flex>
         </Flex>
         {isFirstBid && (
           <Text pb="8px" small>
-            {t('First bid must be %initialBidAmount% CAKE or more.', { initialBidAmount })}
+            {t('First bid must be %initialBidAmount% BGSP or more.', { initialBidAmount })}
           </Text>
         )}
         <BalanceInput
@@ -252,7 +252,7 @@ const PlaceBidModal: React.FC<PlaceBidModalProps> = ({
           )}
         </Flex>
         <Text color="textSubtle" small mt="24px">
-          {t('If your bid is unsuccessful, you’ll be able to reclaim your CAKE after the auction.')}
+          {t('If your bid is unsuccessful, you’ll be able to reclaim yourBGSP after the auction.')}
         </Text>
       </InnerContent>
     </StyledModal>

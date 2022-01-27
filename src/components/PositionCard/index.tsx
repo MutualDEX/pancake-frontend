@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { JSBI, Pair, Percent } from '@pancakeswap/sdk'
+import { JSBI, Pair, Percent } from '@bigswap/sdk'
 import {
   Button,
   Text,
@@ -10,7 +10,7 @@ import {
   Flex,
   CardProps,
   AddIcon,
-} from '@pancakeswap/uikit'
+} from 'uikit'
 import styled from 'styled-components'
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import { useTranslation } from 'contexts/Localization'
@@ -131,7 +131,7 @@ export function MinimalPositionCard({ pair, showUnwrapped = false }: PositionCar
         <LightCard>
           <Text fontSize="14px" style={{ textAlign: 'center' }}>
             <span role="img" aria-label="pancake-icon">
-              🥞
+              �
             </span>{' '}
             {t(
               "By adding liquidity you'll earn 0.17% of all trades on this pair proportional to your share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.",

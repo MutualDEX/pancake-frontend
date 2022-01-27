@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Text } from '@pancakeswap/uikit'
+import { Flex, Text } from 'uikit'
 import { useWeb3React } from '@web3-react/core'
 import { useTranslation } from 'contexts/Localization'
 import { usePriceCakeBusd } from 'state/farms/hooks'
@@ -30,7 +30,7 @@ const RecentCakeProfitCountdownRow = ({ vaultKey }: { vaultKey: VaultKey }) => {
 
   return (
     <Flex alignItems="center" justifyContent="space-between">
-      <Text fontSize="14px">{`${t('Recent CAKE profit')}:`}</Text>
+      <Text fontSize="14px">{`${t('Recent BGSP profit')}:`}</Text>
       {hasAutoEarnings && (
         <RecentCakeProfitBalance
           cakeToDisplay={autoCakeToDisplay}

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "deploy": "gh-pages -d build",
     "analyze": "ANALYZE=true yarn build",
     "dev": "next dev",
     "build": "next build",
@@ -45,7 +46,6 @@
     "@ethersproject/constants": "^5.5.0",
     "@ethersproject/units": "^5.5.0",
     "@bigswap/sdk": "^0.1.2",
-    "@pancakeswap/sdk": "^2.4.0",
     "@pancakeswap/uikit": "^0.63.1",
     "@reduxjs/toolkit": "^1.5.0",
     "@sentry/nextjs": "^6.17.2",

@@ -1,7 +1,7 @@
 import tokens from 'config/constants/tokens'
 import { getCakeVaultAddress, getIfoPoolAddress, getMasterChefAddress } from 'utils/addressHelpers'
 
-const cakeLpAddress = '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0'
+const cakeLpAddress = '0xE9F861b22cd5240494ECC14AfEa02659Ec59864f'
 
 const CakeBalanceStrategy = {
   name: 'erc20-balance-of',

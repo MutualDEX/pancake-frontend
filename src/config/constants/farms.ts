@@ -41,7 +41,7 @@ const farms: SerializedFarmConfig[] = [
    * V3 by order of release (some may be out of PID order due to multiplier boost)
    */
   {   
-    pid: 434,
+    pid: 425,
     lpSymbol: 'BSFE-BNB LP',
     lpAddresses: {
       97: '',
@@ -51,7 +51,7 @@ const farms: SerializedFarmConfig[] = [
     quoteToken: serializedTokens.wbnb,
    },
     { 
-    pid: 433,
+    pid: 424,
     lpSymbol: 'BSFE-BGSP LP',
     lpAddresses: {
       97: '',
@@ -91,16 +91,6 @@ const farms: SerializedFarmConfig[] = [
     quoteToken: serializedTokens.eth,
   },
   {
-    pid: 389,
-    lpSymbol: 'CAKE-BUSD LP',
-    lpAddresses: {
-      97: '',
-      56: '0x804678fa97d91B974ec2af3c843270886528a9E6',
-    },
-    token: serializedTokens.cake,
-    quoteToken: serializedTokens.busd,
-  },
-  {
     pid: 376,
     lpSymbol: 'DOGE-BNB LP',
     lpAddresses: {
@@ -129,16 +119,6 @@ const farms: SerializedFarmConfig[] = [
     },
     token: serializedTokens.pbtc,
     quoteToken: serializedTokens.wbnb,
-  },
-  {
-    pid: 293,
-    lpSymbol: 'UST-BUSD LP',
-    lpAddresses: {
-      97: '',
-      56: '0x05faf555522Fa3F93959F86B41A3808666093210',
-    },
-    token: serializedTokens.ust,
-    quoteToken: serializedTokens.busd,
   },
   {
     pid: 283,
@@ -200,6 +180,26 @@ const farms: SerializedFarmConfig[] = [
     token: serializedTokens.usdt,
     quoteToken: serializedTokens.busd,
   },
+  /*{
+    pid: 242,
+    lpSymbol: 'PERL-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0xB1C2e08A992a619DA570425E78828A8508654f4F',
+    },
+    token: serializedTokens.perl,
+    quoteToken: serializedTokens.wbnb,
+  },
+  {
+    pid: 241,
+    lpSymbol: 'TLM-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x25f15Cb3D3B3753702E1d5c4E5f6F0720b197843',
+    },
+    token: serializedTokens.tlm,
+    quoteToken: serializedTokens.wbnb,
+  },*/
 ]
 
 export default farms

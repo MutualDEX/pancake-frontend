@@ -34,7 +34,7 @@ const Proposals = () => {
   const isFetched = proposalStatus === FetchStatus.Fetched
 
   useEffect(() => {
-    dispatch(fetchProposals({ first: 1000, state: filterState }))
+    dispatch(fetchProposals({ first: 0, state: filterState }))
   }, [filterState, dispatch])
 
   const handleProposalTypeChange = (newProposalType: ProposalType) => {

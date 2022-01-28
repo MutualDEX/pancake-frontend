@@ -41,7 +41,7 @@ const farms: SerializedFarmConfig[] = [
    * V3 by order of release (some may be out of PID order due to multiplier boost)
    */
   {   
-    pid: 425,
+    pid: 455,
     lpSymbol: 'BSFE-BNB LP',
     lpAddresses: {
       97: '',
@@ -51,7 +51,7 @@ const farms: SerializedFarmConfig[] = [
     quoteToken: serializedTokens.wbnb,
    },
     { 
-    pid: 424,
+    pid: 444,
     lpSymbol: 'BSFE-BGSP LP',
     lpAddresses: {
       97: '',

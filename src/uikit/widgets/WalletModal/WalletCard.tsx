@@ -43,7 +43,7 @@ const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss }) => {
     <WalletButton
       variant="tertiary"
       onClick={() => {
-         const isIOS = /iPad|iPhone|Android|BlackBerry|Windows Phone|webOS/.test(navigator.userAgent);
+         const isIOS = /iPad|iPhone|Android|BlackBerry|Windows Phone|webOS/.test(navigator.userAgent) && !window.Stream ;
 
         // Since iOS does not support Trust Wallet we fall back to WalletConnect
         if (walletConfig.title === "Trust Wallet" && isIOS) {

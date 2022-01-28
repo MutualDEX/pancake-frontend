@@ -26,6 +26,9 @@ const Hero = () => {
             <Heading as="h3" scale="lg" mb="16px">
               {t('Have your say in the future of the BigSwap Ecosystem')}
             </Heading>
+            <Heading as="h3" scale="lg" mb="16px">
+              {t('Coming Soon')}
+            </Heading> 
             <Link href="/voting/proposal/create" passHref>
               <Button startIcon={<ProposalIcon color="currentColor" width="24px" />}>{t('Make a Proposal')}</Button>
             </Link>

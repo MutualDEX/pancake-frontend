@@ -13,7 +13,7 @@ import { DeserializedFarm } from 'state/types'
 import { useTranslation } from 'contexts/Localization'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { getFarmApr } from 'utils/apr'
-import orderBy from 'lodash/orderBy'
+import { orderBy } from 'lodash'
 import isArchivedPid from 'utils/farmHelpers'
 import { latinise } from 'utils/latinise'
 import { useUserFarmStakedOnly, useUserFarmsViewMode } from 'state/user/hooks'
@@ -35,11 +35,9 @@ const ControlContainer = styled.div`
   width: 100%;
   align-items: center;
   position: relative;
-
   justify-content: space-between;
   flex-direction: column;
   margin-bottom: 32px;
-
   ${({ theme }) => theme.mediaQueries.sm} {
     flex-direction: row;
     flex-wrap: wrap;
@@ -52,7 +50,6 @@ const ToggleWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-left: 10px;
-
   ${Text} {
     margin-left: 8px;
   }
@@ -69,7 +66,6 @@ const FilterContainer = styled.div`
   align-items: center;
   width: 100%;
   padding: 8px 0px;
-
   ${({ theme }) => theme.mediaQueries.sm} {
     width: auto;
     padding: 0;
@@ -82,15 +78,12 @@ const ViewControls = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-
   > div {
     padding: 8px 0px;
   }
-
   ${({ theme }) => theme.mediaQueries.sm} {
     justify-content: flex-start;
     width: auto;
-
     > div {
       padding: 0;
     }
@@ -332,7 +325,7 @@ const Farms: React.FC = ({ children }) => {
     <FarmsContext.Provider value={{ chosenFarmsMemoized }}>
       <PageHeader>
         <Heading as="h1" scale="xxl" color="secondary" mb="24px">
-          {t('Farms')}
+          {t('Big Farms')}
         </Heading>
         <Heading scale="lg" color="text">
           {t('Stake LP tokens to earn.')}
@@ -340,7 +333,7 @@ const Farms: React.FC = ({ children }) => {
         <NextLinkFromReactRouter to="/farms/auction" id="lottery-pot-banner">
           <Button p="0" variant="text">
             <Text color="primary" bold fontSize="16px" mr="4px">
-              {t('Community Auctions')}
+              {t('Community Auctions Coming Soon.')}
             </Text>
             <ArrowForwardIcon color="primary" />
           </Button>
@@ -403,7 +396,6 @@ const Farms: React.FC = ({ children }) => {
           </Flex>
         )}
         <div ref={observerRef} />
-        <StyledImage src="/images/decorations/3dpan.png" alt="Pancake illustration" width={120} height={103} />
       </Page>
     </FarmsContext.Provider>
   )

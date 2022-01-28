@@ -56,7 +56,7 @@ export default {
     97: '',
   },
   ifoPool: {
-    56: '0x1B2A2f6ed4A1401E8C73B4c2B6172455ce2f78E8',
+    56: '',
     97: '',
   },
   predictions: {
@@ -84,7 +84,7 @@ export default {
     97: '',
   },
   farmAuction: {
-    56: '0xb92Ab7c1edcb273AbA24b0656cEb3681654805D2',
+    56: '',
     97: '0x3F9602593b4f7C67ab045DB51BbDEa94E40fA9Fe',
   },
   AnniversaryAchievement: {

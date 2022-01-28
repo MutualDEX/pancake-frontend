@@ -33,27 +33,27 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
   switch (basePath) {
     case '/':
       return {
-        title: `${t('Home')} | ${t('PancakeSwap')}`,
+        title: `${t('Home')} | ${t('BigSwap')}`,
       }
     case '/swap':
       return {
-        title: `${t('Exchange')} | ${t('PancakeSwap')}`,
+        title: `${t('Exchange')} | ${t('BigSwap')}`,
       }
     case '/add':
       return {
-        title: `${t('Add Liquidity')} | ${t('PancakeSwap')}`,
+        title: `${t('Add Liquidity')} | ${t('BigSwap')}`,
       }
     case '/remove':
       return {
-        title: `${t('Remove Liquidity')} | ${t('PancakeSwap')}`,
+        title: `${t('Remove Liquidity')} | ${t('BigSwap')}`,
       }
     case '/liquidity':
       return {
-        title: `${t('Liquidity')} | ${t('PancakeSwap')}`,
+        title: `${t('Liquidity')} | ${t('BigSwap')}`,
       }
     case '/find':
       return {
-        title: `${t('Import Pool')} | ${t('PancakeSwap')}`,
+        title: `${t('Import Pool')} | ${t('BigSwap')}`,
       }
     case '/competition':
       return {
@@ -69,15 +69,15 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       }
     case '/farms':
       return {
-        title: `${t('Farms')} | ${t('PancakeSwap')}`,
+        title: `${t('Farms')} | ${t('BigSwap')}`,
       }
     case '/farms/auction':
       return {
-        title: `${t('Farm Auctions')} | ${t('PancakeSwap')}`,
+        title: `${t('Farm Auctions')} | ${t('BigSwap')}`,
       }
     case '/pools':
       return {
-        title: `${t('Pools')} | ${t('PancakeSwap')}`,
+        title: `${t('Pools')} | ${t('BigSwap')}`,
       }
     case '/lottery':
       return {
@@ -85,7 +85,7 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       }
     case '/ifo':
       return {
-        title: `${t('Initial Farm Offering')} | ${t('PancakeSwap')}`,
+        title: `${t('Initial Farm Offering')} | ${t('BigSwap')}`,
       }
     case '/teams':
       return {
@@ -93,30 +93,30 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       }
     case '/voting':
       return {
-        title: `${t('Voting')} | ${t('PancakeSwap')}`,
+        title: `${t('Voting')} | ${t('BigSwap')}`,
       }
     case '/voting/proposal':
       return {
-        title: `${t('Proposals')} | ${t('PancakeSwap')}`,
+        title: `${t('Proposals')} | ${t('BigSwap')}`,
       }
     case '/voting/proposal/create':
       return {
-        title: `${t('Make a Proposal')} | ${t('PancakeSwap')}`,
+        title: `${t('Make a Proposal')} | ${t('BigSwap')}`,
       }
     case '/info':
       return {
-        title: `${t('Overview')} | ${t('PancakeSwap Info & Analytics')}`,
-        description: 'View statistics for Pancakeswap exchanges.',
+        title: `${t('Overview')} | ${t('BigSwap Info & Analytics')}`,
+        description: 'View statistics for BigSwap exchanges.',
       }
     case '/info/pools':
       return {
-        title: `${t('Pools')} | ${t('PancakeSwap Info & Analytics')}`,
-        description: 'View statistics for Pancakeswap exchanges.',
+        title: `${t('Pools')} | ${t('BigSwap Info & Analytics')}`,
+        description: 'View statistics for BigSwap exchanges.',
       }
     case '/info/tokens':
       return {
-        title: `${t('Tokens')} | ${t('PancakeSwap Info & Analytics')}`,
-        description: 'View statistics for Pancakeswap exchanges.',
+        title: `${t('Tokens')} | ${t('BigSwap Info & Analytics')}`,
+        description: 'View statistics for BigSwap exchanges.',
       }
     case '/nfts':
       return {

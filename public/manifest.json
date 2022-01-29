@@ -1,8 +1,8 @@
 {
-  "short_name": "PancakeSwap",
-  "name": "PancakeSwap",
-  "description": "Farm CAKE with Pancake LP Tokens",
-  "homepage_url": "https://pancakeswap.finance",
+  "short_name": "BigSwap",
+  "name": "BigSwap",
+  "description": "Farm BGSP with BigSwap LP Tokens",
+  "homepage_url": "https://bigswap.exchange",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",

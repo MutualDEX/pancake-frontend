@@ -79,7 +79,7 @@ const BountyModal: React.FC<BountyModalProps> = ({ onDismiss, TooltipComponent }
         toastSuccess(
           t('Bounty collected!'),
           <ToastDescriptionWithTx txHash={receipt.transactionHash}>
-            {t('CAKE bounty has been sent to your wallet.')}
+            {t('BGSP bounty has been sent to your wallet.')}
           </ToastDescriptionWithTx>,
         )
         setPendingTx(false)

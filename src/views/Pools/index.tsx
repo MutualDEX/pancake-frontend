@@ -47,11 +47,9 @@ const PoolControls = styled.div`
   width: 100%;
   align-items: center;
   position: relative;
-
   justify-content: space-between;
   flex-direction: column;
   margin-bottom: 32px;
-
   ${({ theme }) => theme.mediaQueries.sm} {
     flex-direction: row;
     flex-wrap: wrap;
@@ -65,7 +63,6 @@ const FilterContainer = styled.div`
   align-items: center;
   width: 100%;
   padding: 8px 0px;
-
   ${({ theme }) => theme.mediaQueries.sm} {
     width: auto;
     padding: 0;
@@ -262,6 +259,7 @@ const Pools: React.FC = () => {
           </Flex>
           <Flex flex="1" height="fit-content" justifyContent="center" alignItems="center" mt={['24px', null, '0']}>
             <HelpButton />
+            <BountyCard />
           </Flex>
         </Flex>
       </PageHeader>

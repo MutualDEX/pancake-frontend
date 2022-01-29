@@ -7,14 +7,16 @@ export default {
     97: '',
     56: '0x65FE214382fD9e0d6cF054EeD65C150C88ed6834',
   },
-  lotteryV2: {
-    97: '0x5790c3534F30437641541a0FA04C992799602998',
-    56: '0x5aF6D33DE2ccEC94efb1bDF8f92Bd58085432d2c',
+    cakeVault: {
+    56: '0x999B072EEd7c671D01Dd3C8563a4890Ff7083203',
+    97: '',
   },
   multiCall: {
     56: '0xfF6FD90A470Aaa0c1B8A54681746b07AcdFedc9B',
     97: '0x8F3273Fb89B075b1645095ABaC6ed17B2d4Bc576',
   },
+   // //////////////////////
+ 
   pancakeProfile: {
     56: '0xDf4dBf6536201370F95e06A0F8a7a70fE40E388a',
     97: '0x4B683C7E13B6d5D7fd1FeA9530F451954c1A7c8A',
@@ -51,9 +53,9 @@ export default {
     56: '0x23c41D28A239dDCAABd1bb1deF8d057189510066',
     97: '0x24ec6962dbe874F6B67B5C50857565667fA0854F',
   },
-  cakeVault: {
-    56: '0x999B072EEd7c671D01Dd3C8563a4890Ff7083203',
-    97: '',
+  lotteryV2: {
+    97: '0x5790c3534F30437641541a0FA04C992799602998',
+    56: '0x5aF6D33DE2ccEC94efb1bDF8f92Bd58085432d2c',
   },
   ifoPool: {
     56: '',

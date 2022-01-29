@@ -22,7 +22,7 @@ const config = {
   experimental: {
     styledComponents: true,
   },
-  reactStrictMode: false,
+  reactStrictMode: true,
   async rewrites() {
     return [
       {

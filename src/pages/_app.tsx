@@ -56,7 +56,7 @@ function MyApp(props: AppProps) {
           name="description"
           content="Cheaper and faster than Uniswap? Discover BigSwap, the leading DEX on Binance Smart Chain (BSC) with the best farms in DeFi and a lottery for BGSP."
         />
-        <meta name="theme-color" content="#1FC7D4" />
+        <meta name="theme-color" content="#0000B8" />
         <meta name="twitter:image" content="https://bigswap.exchange/images/hero.png" />
         <meta
           name="twitter:description"
@@ -67,7 +67,7 @@ function MyApp(props: AppProps) {
           name="twitter:title"
           content="BigSwap - A next evolution DeFi exchange on Binance Smart Chain (BSC)"
         />
-        <title>PancakeSwap</title>
+        <title>BigSwap</title>
       </Head>
       <Providers store={store}>
         <Blocklist>

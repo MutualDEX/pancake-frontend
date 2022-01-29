@@ -5,7 +5,7 @@ export default {
   },
   sousChef: {
     97: '',
-    56: '',
+    56: '0x65FE214382fD9e0d6cF054EeD65C150C88ed6834',
   },
   lotteryV2: {
     97: '0x5790c3534F30437641541a0FA04C992799602998',

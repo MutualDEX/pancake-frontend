@@ -42,6 +42,48 @@ const pools: SerializedPoolConfig[] = [
     sortOrder: 1,
     isFinished: false,
   },
+   {
+    sousId: 260,
+    stakingToken: serializedTokens.cake,
+    earningToken: serializedTokens.raca,
+    contractAddress: {
+      97: '',
+      56: '0xAaF43935a526DF88AB57FC69b1d80a8d35e1De82',
+    },
+    poolCategory: PoolCategory.CORE,
+    harvest: true,
+    sortOrder: 999,
+    tokenPerBlock: '204.2',
+    deployedBlockNumber: 14729372,
+  },
+  {
+    sousId: 259,
+    stakingToken: serializedTokens.cake,
+    earningToken: serializedTokens.ertha,
+    contractAddress: {
+      97: '',
+      56: '0x921Ea7e12A66025F2BD287eDbff6dc5cEABd6477',
+    },
+    poolCategory: PoolCategory.CORE,
+    harvest: true,
+    sortOrder: 999,
+    tokenPerBlock: '1.585',
+    deployedBlockNumber: 14690369,
+  },
+  {
+    sousId: 258,
+    stakingToken: serializedTokens.cake,
+    earningToken: serializedTokens.fuse,
+    contractAddress: {
+      97: '',
+      56: '0xeAd7b8fc5F2E5672FAe9dCf14E902287F35CB169',
+    },
+    poolCategory: PoolCategory.CORE,
+    harvest: true,
+    sortOrder: 999,
+    tokenPerBlock: '0.19',
+    deployedBlockNumber: 14552132,
+  },
 ]
 
 export default pools

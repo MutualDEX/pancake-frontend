@@ -5,7 +5,7 @@ export default {
   },
   sousChef: {
     97: '',
-    56: '0x65FE214382fD9e0d6cF054EeD65C150C88ed6834',
+    56: '0x6ab8463a4185b80905e05a9ff80a2d6b714b9e95',
   },
     cakeVault: {
     56: '0x999B072EEd7c671D01Dd3C8563a4890Ff7083203',

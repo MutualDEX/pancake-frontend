@@ -33,7 +33,7 @@ const pools: SerializedPoolConfig[] = [
     stakingToken: serializedTokens.bgsp,
     earningToken: serializedTokens.bgsp,
     contractAddress: {
-      97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
+      97: '',
       56: '0x65FE214382fD9e0d6cF054EeD65C150C88ed6834',
     },
     poolCategory: PoolCategory.CORE,
@@ -42,33 +42,7 @@ const pools: SerializedPoolConfig[] = [
     sortOrder: 1,
     isFinished: false,
   },
-  {
-    sousId: 246,
-    stakingToken: serializedTokens.cake,
-    earningToken: serializedTokens.thg,
-    contractAddress: {
-      97: '',
-      56: '0x56Bfb98EBEF4344dF2d88c6b80694Cba5EfC56c8',
-    },
-    poolCategory: PoolCategory.CORE,
-    harvest: true,
-    sortOrder: 999,
-    tokenPerBlock: '0.03761',
-  },
-  {
-    sousId: 244,
-    stakingToken: serializedTokens.cake,
-    earningToken: serializedTokens.xcv,
-    contractAddress: {
-      97: '',
-      56: '0xF1fA41f593547E406a203b681df18acCC3971A43',
-    },
-    poolCategory: PoolCategory.CORE,
-    harvest: true,
-    sortOrder: 999,
-    tokenPerBlock: '0.7413',
-  },
-  {
+ /* {
     sousId: 243,
     stakingToken: serializedTokens.cake,
     earningToken: serializedTokens.nabox,
@@ -80,7 +54,7 @@ const pools: SerializedPoolConfig[] = [
     harvest: true,
     sortOrder: 999,
     tokenPerBlock: '1271',
-  }, 
+  }, */
 ]
 
 export default pools

@@ -15,16 +15,16 @@ export const vaultPoolConfig = {
       secondarySrc: '/images/tokens/autorenew.svg',
     },
   },
-  /*[VaultKey.IfoPool]: {
+  [VaultKey.IfoPool]: {
     name: 'IFO BGSP',
-    description: 'Stake BGSP to participate in IFOs',
+    description: 'COMING SOON - Stake BGSP to participate in IFOs',
     autoCompoundFrequency: 1,
     gasLimit: 500000,
     tokenImage: {
       primarySrc: `/images/tokens/${tokens.cake.address}.svg`,
       secondarySrc: `/images/tokens/ifo-pool-icon.svg`,
     },
-  },*/
+  },
 } as const
 
 const pools: SerializedPoolConfig[] = [
@@ -42,7 +42,7 @@ const pools: SerializedPoolConfig[] = [
     sortOrder: 1,
     isFinished: false,
   },
- /* {
+/*  {
     sousId: 243,
     stakingToken: serializedTokens.cake,
     earningToken: serializedTokens.nabox,

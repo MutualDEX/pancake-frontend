@@ -1,11 +1,11 @@
 export default {
   masterChef: {
     97: '0x1d32c2945C8FDCBc7156c553B7cEa4325a17f4f9',
-    56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
+    56: '0x65FE214382fD9e0d6cF054EeD65C150C88ed6834',
   },
   sousChef: {
     97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
-    56: '0x6ab8463a4185b80905e05a9ff80a2d6b714b9e95',
+    56: '0x65FE214382fD9e0d6cF054EeD65C150C88ed6834',
   },
   lotteryV2: {
     97: '0x5790c3534F30437641541a0FA04C992799602998',
@@ -52,7 +52,7 @@ export default {
     97: '0x24ec6962dbe874F6B67B5C50857565667fA0854F',
   },
   cakeVault: {
-    56: '0xa80240Eb5d7E05d3F250cF000eEc0891d00b51CC',
+    56: '0x999B072EEd7c671D01Dd3C8563a4890Ff7083203',
     97: '',
   },
   ifoPool: {
@@ -84,7 +84,7 @@ export default {
     97: '',
   },
   farmAuction: {
-    56: '0xb92Ab7c1edcb273AbA24b0656cEb3681654805D2',
+    56: '',
     97: '0x3F9602593b4f7C67ab045DB51BbDEa94E40fA9Fe',
   },
   AnniversaryAchievement: {

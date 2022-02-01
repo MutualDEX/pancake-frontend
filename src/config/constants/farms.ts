@@ -22,7 +22,7 @@ const farms: SerializedFarmConfig[] = [
     lpSymbol: 'BGSP-BNB LP',
     lpAddresses: {
       97: '0x66bffcac0782200d6276142768f79600a458bb04',
-      56: '0x3509a6640cbe27bbccb7f20e0eaf5c3eba930df3',
+      56: '0x66bffcac0782200d6276142768f79600a458bb04',
     },
     token: serializedTokens.bgsp,
     quoteToken: serializedTokens.wbnb,

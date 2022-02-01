@@ -55,6 +55,10 @@ export default {
     56: '0x999B072EEd7c671D01Dd3C8563a4890Ff7083203',
     97: '',
   },
+   BGSPVault: {
+    56: '0x999B072EEd7c671D01Dd3C8563a4890Ff7083203',
+    97: '',
+  },
   ifoPool: {
     56: '0x999B072EEd7c671D01Dd3C8563a4890Ff7083203',
     97: '',

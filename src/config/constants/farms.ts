@@ -37,9 +37,6 @@ const farms: SerializedFarmConfig[] = [
     token: serializedTokens.busd,
     quoteToken: serializedTokens.wbnb,
   },
-  /**
-   * V3 by order of release (some may be out of PID order due to multiplier boost)
-   */
   {   
     pid: 655,
     lpSymbol: 'BSFE-BNB LP',

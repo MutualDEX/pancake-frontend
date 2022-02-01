@@ -5,7 +5,7 @@ export default {
   },
   sousChef: {
     97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
-    56: '0x65FE214382fD9e0d6cF054EeD65C150C88ed6834',
+    56: '0x6ab8463a4185b80905e05a9ff80a2d6b714b9e95',
   },
   lotteryV2: {
     97: '0x5790c3534F30437641541a0FA04C992799602998',
@@ -56,8 +56,8 @@ export default {
     97: '',
   },
   ifoPool: {
-    56: '0x999B072EEd7c671D01Dd3C8563a4890Ff7083203',
-    97: '',
+    56: '',
+    97: '0x999B072EEd7c671D01Dd3C8563a4890Ff7083203',
   },
   predictions: {
     56: '0x18B2A687610328590Bc8F2e5fEdDe3b582A49cdA',

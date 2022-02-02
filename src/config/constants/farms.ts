@@ -57,7 +57,7 @@ const farms: SerializedFarmConfig[] = [
     token: serializedTokens.bsfe,
     quoteToken: serializedTokens.bgsp,
    },   
-   {
+  /* {
     pid: 623,
     lpSymbol: 'USDC-USDT LP',
     lpAddresses: {
@@ -167,7 +167,7 @@ const farms: SerializedFarmConfig[] = [
     token: serializedTokens.usdt,
     quoteToken: serializedTokens.busd,
   },
-  /*{
+  {
     pid: 506,
     lpSymbol: 'ERTHA-BNB LP',
     lpAddresses: {

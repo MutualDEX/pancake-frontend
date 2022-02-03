@@ -22,7 +22,7 @@ export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/
 /**
  * subgrafico de gol finance de volumen y liquidez
  */
-export const INFO_CLIENT = 'https://api.thegraph.com/subgraphs/name/bigswap-finance/bigswap-finance-v2'
+export const INFO_CLIENT = 'https://api.thegraph.com/subgraphs/name/golfinance/gol-exchange'
 export const BLOCKS_CLIENT = 'https://api.thegraph.com/subgraphs/name/pancakeswap/blocks'
 export const GRAPH_API_NFTMARKET = process.env.NEXT_PUBLIC_GRAPH_API_NFT_MARKET
 export const GRAPH_HEALTH = 'https://api.thegraph.com/index-node/graphql'

@@ -38,7 +38,7 @@ const farms: SerializedFarmConfig[] = [
     quoteToken: serializedTokens.wbnb,
   },
   {   
-    pid: 655,
+    pid: 2,
     lpSymbol: 'BSFE-BNB LP',
     lpAddresses: {
       97: '',
@@ -48,7 +48,7 @@ const farms: SerializedFarmConfig[] = [
     quoteToken: serializedTokens.wbnb,
    },
     { 
-    pid: 644,
+    pid: 3,
     lpSymbol: 'BSFE-BGSP LP',
     lpAddresses: {
       97: '',
@@ -56,7 +56,17 @@ const farms: SerializedFarmConfig[] = [
     },
     token: serializedTokens.bsfe,
     quoteToken: serializedTokens.bgsp,
-   },   
+   },  
+   {
+    pid: 1,
+    lpSymbol: 'BGSP-BNB LP',
+    lpAddresses: {
+      97: '0x66bffcac0782200d6276142768f79600a458bb04',
+      56: '0x66bffcac0782200d6276142768f79600a458bb04',
+    },
+    token: serializedTokens.bgsp,
+    quoteToken: serializedTokens.wbnb,
+  },
   /* {
     pid: 623,
     lpSymbol: 'USDC-USDT LP',
